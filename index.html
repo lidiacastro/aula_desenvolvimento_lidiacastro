@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Aula webmapa</title>
+  <meta name="author" content="Lidia" />
+  <meta name="description"
+    content="Atividade da aula prática de introdução a construção de mapas temáticos no ambiente web ." />
+  <link rel="shortcut icon" href="https://ufpr.br/wp-content/uploads/2015/11/ufpr_1000.jpg" type="image/x-icon" />
+
+  <link rel="stylesheet" href="meu-arquivo-css.css" />
+  <script src="./conflitos.js"></script>
+  <script src="./centroides.js"></script>
+  <script src="./favelas.js"></script>
+  <!--<script src="meu-arquivo-js.js"></script>-->
+  <script type="module" crossorigin src="./assets/index-Xrjv4hUU.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-uyEdNV8f.css">
+</head>
+
+<body>
+  <div id="map"></div>
+
+  <header id="cabecalho-principal">
+    <section>
+      <img src='./assets/globo-5qfH9SPq.png' alt="globo">
+    </section>
+    <nav>
+      <a href=#home>Introdução</a>
+      <a href=#map1>Mapa Coroplético</a>
+      <a href=#map2>Mapa de símbolos Pontuais Proporcionais</a>
+      <a href=#map3>Mapa de Calor</a>
+    </nav>
+
+  </header>
+  <main>
+    <article id="home">
+      <section id=”introducao_disciplina”>
+        <h2>Disciplina: Introdução a construção de mapas temáticos no ambiente Web</h2>
+        Web mapas são utilizados todos os dias
+      </section>
+      <section id=“topicos_abordados>
+        <ul>
+          <li>Revisão sobre cartografia</li>
+          <li>Mapas temáticos</li>
+          <li>Geoserviços</li>
+          <li>Html</li>
+          <li>Css</li>
+          <li>Javascript</li>
+          <li>Biblioteca de mapas</li>
+
+        </ul>
+      </section>
+      <aside id="referencias">
+        <h2>Referências</h2>
+        <ul>
+          <li>https://openlayers.org</li>
+          <li>https://geoserver.pr.gov.br/geoserver/web</li>
+        </ul>
+      </aside>
+    </article>
+
+    <section id="map1" class="container_mapa">
+      <div id="mapa1"></div>
+      <section id="descricao_coropletico">
+        <h3>Descrição do Mapa</h3>
+        <table>
+          <tr>
+            <th>Tipo de Representação</th>
+            <th>Método Coroplético</th>
+          </tr>
+          <tr>
+            <th>Método de Classificação</th>
+            <th>Jenks</th>
+          </tr>
+          <tr>
+            <th>Tema</th>
+            <th>Conflitos rurais</th>
+          </tr>
+        </table>
+      </section>
+    </section>
+
+    <section id=map2 class="container_mapa">
+      <div id="mapa2"></div>
+      <section>
+        <h3>Descrição do Mapa</h3>
+        <table>
+          <tr>
+            <th>Tipo de Representação</th>
+            <th>Símbolos pontuais proporcionais</th>
+          </tr>
+          <tr>
+            <th>Método de Classificação</th>
+            <th>Método não classificado</th>
+          </tr>
+          <tr>
+            <th>Tema</th>
+            <th>Conflitos rurais</th>
+          </tr>
+        </table>
+      </section>
+    </section>
+
+    <section id=map3 class="container_mapa">
+      <div id="mapa3"></div>
+      <section>
+        <h3>Descrição do Mapa</h3>
+        <table>
+          <tr>
+            <th>Método de Representação</th>
+            <th>Mapa de calor</th>
+          </tr>
+          <tr>
+              <td>Tema</td>
+              <td>Favelas</td>
+          </tr>
+          <tr>
+            <th>Tamanho do raio</th>
+            <th>3</th>
+          </tr>
+          <tr>
+            <th>Valor de blur</th>
+            <th>30</th>
+          </tr>
+        </table>
+      </section>
+    </section>
+
+  </main>
+  <footer id="rodape_principal">
+    <address>
+      Desenvolvido por: Lidia Castro
+      Email:<a href="mailto:lidiacastro@ufpr.br">lidiacastro@ufpr.br</a>
+    </address>
+  </footer>
+</body>
+
+</html>
